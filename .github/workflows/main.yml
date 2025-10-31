@@ -25,5 +25,8 @@ jobs:
 
       - name: Intall dependencies 
         run: yarn
+
+      - name: Rum Tests
+        run: yarn test
         
     
