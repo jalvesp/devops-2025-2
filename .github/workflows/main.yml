@@ -35,7 +35,7 @@ jobs:
         id: generate_tag
         run: |
               SHA=$(echo $GITHUB_SHA  | head -c7)
-              echo "sah=$SHA" >> $GITHUB_OUTPUT
+              echo "sha=$SHA" >> $GITHUB_OUTPUT
               
       - name: Login in DockerHub 
         uses: docker/login-action@v3
