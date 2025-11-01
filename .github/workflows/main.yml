@@ -34,7 +34,7 @@ jobs:
       - name: Generate Tag
         id: generate_tag
         run: |
-              SAH=$(echo $GITHUB_SHA  | head -c7)
+              SHA=$(echo $GITHUB_SHA  | head -c7)
               echo "sah=$SHA" >> $GITHUB_OUTPUT
               
       - name: Login in DockerHub 
